@@ -1,0 +1,3 @@
+[submodule "NXBootUSBLib"]
+	path = NXBootUSBLib
+	url = https://github.com/pporn/NXBootUSBLib

@@ -12,7 +12,35 @@
 		74919EE323A5A52600816BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74919EE223A5A52600816BD9 /* Assets.xcassets */; };
 		74919EE623A5A52600816BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74919EE423A5A52600816BD9 /* Main.storyboard */; };
 		74919EE923A5A52600816BD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74919EE823A5A52600816BD9 /* main.m */; };
+		74919EF223A5D1B200816BD9 /* RcmMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 74919EF123A5D1B200816BD9 /* RcmMonitor.m */; };
+		74919EFA23A5D9F300816BD9 /* NXBootUSBLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74919EF823A5D9CD00816BD9 /* NXBootUSBLib.framework */; };
+		74919EFB23A5D9F300816BD9 /* NXBootUSBLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74919EF823A5D9CD00816BD9 /* NXBootUSBLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74919EFF23A61DE000816BD9 /* intermezzo.bin in Resources */ = {isa = PBXBuildFile; fileRef = 74919EFE23A61DE000816BD9 /* intermezzo.bin */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74919EF723A5D9CD00816BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74919EF323A5D9CD00816BD9 /* NXBootUSBLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7407A5A523A5A05B00DEC305;
+			remoteInfo = NXBootUSBLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74919EFC23A5D9F300816BD9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74919EFB23A5D9F300816BD9 /* NXBootUSBLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		74919ED923A5A52500816BD9 /* iTegra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTegra.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +53,10 @@
 		74919EE723A5A52600816BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74919EE823A5A52600816BD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74919EEA23A5A52600816BD9 /* iTegra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTegra.entitlements; sourceTree = "<group>"; };
+		74919EF023A5D01100816BD9 /* RcmMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RcmMonitor.h; sourceTree = "<group>"; };
+		74919EF123A5D1B200816BD9 /* RcmMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RcmMonitor.m; sourceTree = "<group>"; };
+		74919EF323A5D9CD00816BD9 /* NXBootUSBLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NXBootUSBLib.xcodeproj; path = NXBootUSBLib/NXBootUSBLib.xcodeproj; sourceTree = "<group>"; };
+		74919EFE23A61DE000816BD9 /* intermezzo.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = intermezzo.bin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74919EFA23A5D9F300816BD9 /* NXBootUSBLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +74,10 @@
 		74919ED023A5A52500816BD9 = {
 			isa = PBXGroup;
 			children = (
+				74919EF323A5D9CD00816BD9 /* NXBootUSBLib.xcodeproj */,
 				74919EDB23A5A52500816BD9 /* iTegra */,
 				74919EDA23A5A52500816BD9 /* Products */,
+				74919EF923A5D9F300816BD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +92,7 @@
 		74919EDB23A5A52500816BD9 /* iTegra */ = {
 			isa = PBXGroup;
 			children = (
+				74919EFD23A61DAE00816BD9 /* Resources */,
 				74919EDC23A5A52500816BD9 /* AppDelegate.h */,
 				74919EDD23A5A52500816BD9 /* AppDelegate.m */,
 				74919EDF23A5A52500816BD9 /* ViewController.h */,
@@ -66,8 +102,33 @@
 				74919EE723A5A52600816BD9 /* Info.plist */,
 				74919EE823A5A52600816BD9 /* main.m */,
 				74919EEA23A5A52600816BD9 /* iTegra.entitlements */,
+				74919EF023A5D01100816BD9 /* RcmMonitor.h */,
+				74919EF123A5D1B200816BD9 /* RcmMonitor.m */,
 			);
 			path = iTegra;
+			sourceTree = "<group>";
+		};
+		74919EF423A5D9CD00816BD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74919EF823A5D9CD00816BD9 /* NXBootUSBLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74919EF923A5D9F300816BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74919EFD23A61DAE00816BD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74919EFE23A61DE000816BD9 /* intermezzo.bin */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +141,7 @@
 				74919ED523A5A52500816BD9 /* Sources */,
 				74919ED623A5A52500816BD9 /* Frameworks */,
 				74919ED723A5A52500816BD9 /* Resources */,
+				74919EFC23A5D9F300816BD9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -115,6 +177,12 @@
 			mainGroup = 74919ED023A5A52500816BD9;
 			productRefGroup = 74919EDA23A5A52500816BD9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74919EF423A5D9CD00816BD9 /* Products */;
+					ProjectRef = 74919EF323A5D9CD00816BD9 /* NXBootUSBLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				74919ED823A5A52500816BD9 /* iTegra */,
@@ -122,12 +190,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		74919EF823A5D9CD00816BD9 /* NXBootUSBLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NXBootUSBLib.framework;
+			remoteRef = 74919EF723A5D9CD00816BD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		74919ED723A5A52500816BD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				74919EE323A5A52600816BD9 /* Assets.xcassets in Resources */,
+				74919EFF23A61DE000816BD9 /* intermezzo.bin in Resources */,
 				74919EE623A5A52600816BD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74919EE123A5A52500816BD9 /* ViewController.m in Sources */,
+				74919EF223A5D1B200816BD9 /* RcmMonitor.m in Sources */,
 				74919EE923A5A52600816BD9 /* main.m in Sources */,
 				74919EDE23A5A52500816BD9 /* AppDelegate.m in Sources */,
 			);
