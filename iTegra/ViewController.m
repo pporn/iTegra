@@ -49,10 +49,10 @@
 - (void) setLabel:(BOOL)isAvailable {
     if(isAvailable) {
         [self.lbModeIndicator setTextColor: [NSColor systemGreenColor]];
-        [self.lbModeIndicator setStringValue:@"RCM mode switch detected!"];
+        [self.lbModeIndicator setStringValue:@"RCM mode Switch detected!"];
     } else {
         [self.lbModeIndicator setTextColor: [NSColor systemRedColor]];
-        [self.lbModeIndicator setStringValue:@"No RCM mode switch!"];
+        [self.lbModeIndicator setStringValue:@"No RCM mode Switch detected!"];
     }
 }
 
